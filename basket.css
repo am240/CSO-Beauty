@@ -1,0 +1,71 @@
+* {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+#navigation {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 8px;
+}
+
+a:hover,
+a:active {
+    padding: 8px;
+    transform: scale(1.1);
+    transition: transform .9s;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a {
+    background: linear-gradient(to right, silver 50%, black 50%);
+    margin-left: 20px;
+}
+
+a {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+
+a {
+    transition: background-position 275ms ease;
+}
+
+a:hover {
+    background-position: 0 100%;
+}
+
+body {
+    background-image: url('images/Marble.jpeg');
+    background-size: 200% 200%;
+    height: 100vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+footer a:hover i::before {
+    background-position: 0% 0%;
+}
+
+@media screen and (max-width: 600px) {
+    .inner-width {
+        padding: 0 20px
+    }
+    .skill {
+        width: 100%;
+    }
+}

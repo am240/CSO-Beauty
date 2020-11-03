@@ -1,0 +1,117 @@
+* {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+#navigation {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 8px;
+}
+
+a:hover,
+a:active {
+    padding: 8px;
+    transform: scale(1.1);
+    transition: transform .9s;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a {
+    background: linear-gradient(to right, silver 50%, black 50%);
+    margin-left: 20px;
+}
+
+a {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+
+a {
+    transition: background-position 275ms ease;
+}
+
+a:hover {
+    background-position: 0 100%;
+}
+
+body {
+    background-image: url('images/Marble.jpeg');
+    background-size: 200% 200%;
+    height: 100vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 45px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    margin: 20px;
+}
+
+.grid>article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid>article img {
+    max-width: 100%;
+}
+
+.grid .text {
+    padding: 20px;
+    text-align: center;
+}
+
+.grid .text h3 {
+    font-size: 1.4rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.grid .text p {
+    font-size: 0.9rem;
+}
+
+.grid .text p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #555;
+    font-family: 'Courgette', cursive;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+footer a:hover i::before {
+    background-position: 0% 0%;
+}
+
+@media screen and (max-width: 600px) {
+    .inner-width {
+        padding: 0 20px
+    }
+    .skill {
+        width: 100%;
+    }
+}
